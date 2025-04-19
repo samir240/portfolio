@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="portfolio-container">
       <Header 
-        name="Your Name" 
+        name="Samir Bensalah" 
         title="Web & Mobile iOS Developer" 
       />
       <About />
