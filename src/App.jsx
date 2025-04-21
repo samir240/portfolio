@@ -5,14 +5,18 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import './App.css'
+// Import images
+import Profil from './assets/IMG-1375.jpg';
 
 function App() {
   return (
     <div className="portfolio-container">
-      <Header 
+  <Header 
         name="Samir Bensalah" 
         title="Web & Mobile iOS Developer" 
+        profileImage={Profil} // ✅ syntaxe correcte avec des accolades
       />
+
       <About />
       <Skills />
       <Projects />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Contact.css';
-
+import { db } from '../firebase';
+import { collection, addDoc, Timestamp } from 'firebase/firestore';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -19,13 +20,17 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch('http://localhost:5000/send', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData)
-    });
-    alert('Message envoyé !');
-    setFormData({ name: '', email: '', message: '' });
+    try {
+      await addDoc(collection(db, 'messages'), {
+        ...formData,
+        timestamp: Timestamp.now()
+      });
+      alert('Message sent successfully! Thank you for reaching out.');
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error("Erreur lors de l'enregistrement :", error);
+      alert("Erreur lors de l'envoi du message.");
+    }
   };
 
   return (
@@ -61,4 +66,4 @@ function Contact() {
   );
 }
 
-export default Contact
+export default Contact;
