@@ -35,7 +35,14 @@ function Contact() {
 
   return (
     <section className="contact-section">
-      <h2>Contact Me</h2>
+      <div className="contact-header">
+        <h2>Let's Work Together</h2>
+        <p className="contact-intro">
+          Have an idea or project in mind? Let's bring it to life together. 
+          Get in touch today and let's start building your solution.
+        </p>
+      </div>
+      
       <form onSubmit={handleSubmit} className="contact-form">
         <input
           type="text"

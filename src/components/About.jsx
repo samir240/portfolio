@@ -7,7 +7,7 @@ function About() {
       <div className="about-content">
         <h2>About Me</h2>
         <p>
-          Passionate web and mobile iOS developer with expertise in creating 
+          Passionate web and mobile developer with expertise in creating 
           elegant, high-performance digital solutions. Committed to crafting 
           user-centric experiences that blend cutting-edge technology with 
           intuitive design.
