@@ -14,7 +14,7 @@ function App() {
     <div className="portfolio-container">
       <Header 
         name="Samir Bensalah" 
-        title="Web & Mobile iOS Developer" 
+        title="Digital Project Manager & Developer – From concept to fully functional web and mobile solutions." 
         profileImage={Profil} // ✅ syntaxe correcte avec des accolades
       />
 
