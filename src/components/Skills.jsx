@@ -4,7 +4,7 @@ import './Skills.css';
 function Skills() {
   const skills = [
     'React', 'Swift', 'JavaScript', 
-    'TypeScript', 'Node.js', 'iOS Development'
+    'TypeScript', 'Node.js', 'iOS Development', 'php', 'html'
   ];
 
   return (
