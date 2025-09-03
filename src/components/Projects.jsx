@@ -72,7 +72,7 @@ function Projects() {
       id: 6,
       image: project7,
       title: 'geolocation app',
-      description: '"App with geolocation features and real-time tracking',
+      description: 'App with geolocation features and real-time tracking',
       technologies: ['React Native', 'Google Maps API', 'Firebase'],
       category: 'Mobile Development',
       color: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)'
@@ -99,7 +99,7 @@ function Projects() {
       id: 9,
       image: project10,
       title: 'Event Management Platform',
-      description: '"Event management platform with ticketing and participant management',
+      description: 'Event management platform with ticketing and participant management',
       technologies: ['React', 'Stripe', 'Node.js'],
       category: 'Web Development',
       color: 'linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)'

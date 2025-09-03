@@ -69,6 +69,12 @@ function Contact() {
         />
         <button type="submit">Send Message</button>
       </form>
+      <div className="cv-section" style={{ marginTop: '2rem', textAlign: 'center' }}>
+        <h3>My Resume</h3>
+        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+          Download (PDF)
+        </a>
+      </div>
     </section>
   );
 }
